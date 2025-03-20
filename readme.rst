@@ -1,71 +1,87 @@
 ###################
-What is CodeIgniter
+Sistem Ujian Online
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Sistem Ujian Online adalah aplikasi berbasis web yang dikembangkan menggunakan framework CodeIgniter 3 untuk memudahkan pelaksanaan ujian secara digital. Aplikasi ini menyediakan antarmuka yang intuitif dan komprehensif untuk manajemen ujian, mulai dari pembuatan soal, penjadwalan ujian, pelaksanaan ujian, hingga pelaporan hasil ujian.
 
 *******************
-Release Information
+Fitur Utama
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+- Multi-level pengguna (Admin, Guru, dan Siswa)
+- Manajemen mata pelajaran
+- Manajemen kelas
+- Manajemen jenis ujian
+- Pembuatan dan pengelolaan bank soal
+- Penjadwalan ujian
+- Pengacakan soal ujian
+- Pelaksanaan ujian dengan batas waktu
+- Penilaian otomatis
+- Laporan hasil ujian
+- Ekspor hasil ujian ke PDF
 
 *******************
-Server Requirements
+Persyaratan Sistem
 *******************
 
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+- PHP versi 8.0 atau lebih baru
+- MySQL 5.7 atau lebih baru
+- Web server (Apache/Nginx)
+- Browser modern (Chrome, Firefox, Edge)
 
 ************
-Installation
+Instalasi
 ************
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+1. Clone atau unduh repositori ini
+2. Letakkan di direktori web server Anda
+3. Buat database MySQL baru
+4. Import file `ujianonline.sql` ke database baru tersebut
+5. Konfigurasi koneksi database di `application/config/database.php`
+6. Akses aplikasi melalui browser
+
+***********
+Penggunaan
+***********
+
+Untuk menggunakan aplikasi ini, gunakan akun berikut:
+
+**Admin:**
+- Username: admin
+- Password: admin123
+
+**Guru:**
+- Username: ahmad.fauzi (dan username guru lainnya)
+- Password: guru1234
+
+**Siswa:**
+- Gunakan NIS siswa sebagai username
+- Password diatur oleh admin
 
 *******
-License
+Struktur Aplikasi
 *******
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+Aplikasi ini mengikuti struktur standar CodeIgniter 3 dengan beberapa penyesuaian:
 
-*********
-Resources
-*********
+- `application/controllers/` - Controller untuk semua fitur
+- `application/models/` - Model untuk akses dan manipulasi data
+- `application/views/` - Tampilan untuk semua modul
+- `assets/` - File CSS, JS, gambar, dan lainnya
+- `dompdf/` - Library untuk ekspor ke PDF
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+*******
+Pengembangan
+*******
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+Aplikasi ini dikembangkan sebagai proyek Tugas Akhir untuk memenuhi persyaratan akademik.
 
-***************
-Acknowledgement
-***************
+Kontributor:
+- [Nama Anda]
+- [Nama Anggota Tim Lainnya jika ada]
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+*******
+Lisensi
+*******
+
+Aplikasi ini dikembangkan untuk tujuan pendidikan.

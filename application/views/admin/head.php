@@ -37,6 +37,10 @@
      <!-- iCheck for checkboxes and radio inputs -->
      <link rel="stylesheet" href="<?php echo base_url() ?>assets/plugins/iCheck/all.css">
      <link rel="stylesheet" href="<?php echo base_url() ?>assets/style.css">
+     <!-- DataTables Responsive untuk Mobile -->
+     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap.min.css">
+     <!-- DataTables FixedColumns untuk Mobile -->
+     <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/4.3.0/css/fixedColumns.bootstrap.min.css">
 
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,3 +51,8 @@
 
      <!-- Google Font -->
      <link rel="stylesheet" href="<?php echo base_url() ?>assets/dist/css/css.css">
+     <!-- Animate CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <!-- AOS (Animate On Scroll) -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>

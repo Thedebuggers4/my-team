@@ -81,6 +81,30 @@ $this->load->view('siswa/head');
     display: block;
   }
   
+  /* Password strength indicator styles */
+  .password-strength-meter {
+    height: 5px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .password-strength-meter-fill {
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .strength-text {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+    display: block;
+  }
+  
   /* Media queries untuk tampilan mobile */
   @media (max-width: 768px) {
     .password-form {
@@ -137,7 +161,10 @@ $this->load->view('siswa/sidebar');
                   </span>
                 </div>
                 <?= form_error('password1', '<small class="error-message">', '</small>'); ?>
-                <div class="password-strength mt-2" id="password-strength"></div>
+                <div class="password-strength-meter">
+                  <div class="password-strength-meter-fill" id="strength-meter-fill"></div>
+                </div>
+                <span class="strength-text" id="password-strength"></span>
               </div>
               
               <div class="password-input">
@@ -194,7 +221,7 @@ $this->load->view('siswa/js');
     }
   }
   
-  // Validasi kekuatan password
+  // Validasi kekuatan password dengan progress bar
   $('#password1').on('keyup', function() {
     var password = $(this).val();
     var strength = 0;
@@ -206,23 +233,43 @@ $this->load->view('siswa/js');
     if (password.match(/[$@#&!]+/)) strength += 1;
     
     var strengthDiv = $('#password-strength');
+    var strengthMeter = $('#strength-meter-fill');
+    var percentage = (strength / 5) * 100;
     
+    // Update progress bar
+    strengthMeter.css('width', percentage + '%');
+    
+    // Update text and color
     switch (strength) {
       case 0:
+        strengthDiv.html('Sangat Lemah');
+        strengthDiv.css('color', '#e74c3c');
+        strengthMeter.css('background-color', '#e74c3c');
+        break;
       case 1:
-        strengthDiv.html('<span style="color: #e74c3c">Sangat Lemah</span>');
+        strengthDiv.html('Sangat Lemah');
+        strengthDiv.css('color', '#e74c3c');
+        strengthMeter.css('background-color', '#e74c3c');
         break;
       case 2:
-        strengthDiv.html('<span style="color: #f39c12">Lemah</span>');
+        strengthDiv.html('Lemah');
+        strengthDiv.css('color', '#f39c12');
+        strengthMeter.css('background-color', '#f39c12');
         break;
       case 3:
-        strengthDiv.html('<span style="color: #3498db">Sedang</span>');
+        strengthDiv.html('Sedang');
+        strengthDiv.css('color', '#3498db');
+        strengthMeter.css('background-color', '#3498db');
         break;
       case 4:
-        strengthDiv.html('<span style="color: #2ecc71">Kuat</span>');
+        strengthDiv.html('Kuat');
+        strengthDiv.css('color', '#2ecc71');
+        strengthMeter.css('background-color', '#2ecc71');
         break;
       case 5:
-        strengthDiv.html('<span style="color: #27ae60">Sangat Kuat</span>');
+        strengthDiv.html('Sangat Kuat');
+        strengthDiv.css('color', '#27ae60');
+        strengthMeter.css('background-color', '#27ae60');
         break;
     }
   });
