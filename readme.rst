@@ -77,11 +77,14 @@ Pengembangan
 Aplikasi ini dikembangkan sebagai proyek Tugas Akhir untuk memenuhi persyaratan akademik.
 
 Kontributor:
-- [Nama Anda]
-- [Nama Anggota Tim Lainnya jika ada]
+- [Team Normal]
+- Arya Dillah - Frontend Dev
+- Adi Satria S - Backend Dev
+- Febrian Sitorus - UI/UX Dev
 
 *******
 Lisensi
 *******
 
-Aplikasi ini dikembangkan untuk tujuan pendidikan.
+Aplikasi ini dikembangkan untuk tujuan pendidikan dan akan dihibahkan ke
+SMK Teknologi Pilar Bangsa.
