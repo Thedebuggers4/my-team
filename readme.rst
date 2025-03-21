@@ -77,6 +77,7 @@ Pengembangan
 Aplikasi ini dikembangkan sebagai proyek Tugas Akhir untuk memenuhi persyaratan akademik.
 
 Kontributor:
+
 - [Team Normal]
 - Arya Dillah - Frontend Dev
 - Adi Satria S - Backend Dev
