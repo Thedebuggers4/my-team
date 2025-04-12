@@ -86,4 +86,4 @@ Lisensi
 Copyright 2025 All rights reserved. | Repost by https://thedebuggers.vercel.app/
 *******
 
-Aplikasi ini dikembangkan untuk tujuan pendidikan, dan akan dihibahkan untuk SMK Teknologi Pilar Bangsa
+Aplikasi ini dikembangkan untuk tujuan pendidikan, dan akan dihibahkan untuk SMK Teknologi Pilar Bangsa.
