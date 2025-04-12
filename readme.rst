@@ -83,7 +83,7 @@ Kontributor:
 
 *******
 Lisensi
-<strong>Copyright &copy; 2025 <a href="#"></a></strong> All rights reserved. | Repost by <a href='https://thedebuggers.vercel.app/' title='thedebuggers' target='_blank'>thedebuggers</a>
+Copyright 2025 All rights reserved. | Repost by https://thedebuggers.vercel.app/
 *******
 
-Aplikasi ini dikembangkan untuk tujuan pendidikan.
+Aplikasi ini dikembangkan untuk tujuan pendidikan, dan akan dihibahkan untuk SMK Teknologi Pilar Bangsa
