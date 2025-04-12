@@ -76,10 +76,10 @@ Pengembangan
 
 Aplikasi ini dikembangkan sebagai proyek Tugas Akhir untuk memenuhi persyaratan akademik.
 
-Kontributor:
-- [Adi Satria Sejati](https://github.com/AdiSatriaSejati)
-- [Arya Dillah](https://github.com/Aryaa0112-A)
-- [Febrian Sitorus](https://github.com/Febrianpane)
+Kontributor Team CI-3:
+- Adi Satria Sejati (https://github.com/AdiSatriaSejati) => Frontend Dev
+- Arya Dillah (https://github.com/Aryaa0112-A) => Backend Dev
+- Febrian Sitorus (https://github.com/Febrianpane) => UI/UX Dev
 
 *******
 Lisensi
