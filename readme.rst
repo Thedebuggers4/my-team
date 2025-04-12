@@ -83,6 +83,7 @@ Kontributor:
 
 *******
 Lisensi
+<strong>Copyright &copy; 2025 <a href="#"></a></strong> All rights reserved. | Repost by <a href='https://thedebuggers.vercel.app/' title='thedebuggers' target='_blank'>thedebuggers</a>
 *******
 
 Aplikasi ini dikembangkan untuk tujuan pendidikan.
